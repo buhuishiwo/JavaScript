@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 400px;
+            background-color: aquamarine;
+        }
+        .active {
+            color: red;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">积极</div>
+    <script>
+        //通过 ClassList 添加
+        const box = document.querySelector('.box')
+        box.classList.add('active')     //追加
+        box.classList.remove('active')      //删除
+        box.classList.toggle('active')      //切换，有就删除，没有就添加
+        //删除了 active 类名
+    </script>
+</body>
+</html>

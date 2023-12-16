@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">123</div>
+    <div class="box">5435</div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        // 选择匹配的第一个元素
+        // document.querySelector('CSS选择器')
+        const box = document.querySelector('div')     //also ('.box')
+        console.log(box);
+        const li = document.querySelector('ul li:first-child')  //选择相同标签的第一个，与 CSS 类似
+        console.dir(li);
+        
+        const lis = document.querySelectorAll('li')
+        console.dir(lis)
+        for(let i = 0;i<lis.length;i++)
+        {
+            console.log(lis[i]);
+        }
+        box.style.color = 'red'
+    </script>
+</body>
+</html>
