@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ['小红','红红','红宝','小陈']
+        for(let i=0;i<=3;i++)
+        {
+            arr[i] = arr[i]+'宝贝'
+        }
+        console.log(arr)
+        /*数组新增*/
+        arr.push('幺宝')   /*从后增加*/
+        console.log(arr)
+        arr.unshift('宝贝')  /*从前增加*/
+        console.log(arr)
+
+        /*数组删除*/
+        arr.pop(arr)  /*删除最后一个*/
+        console.log(arr.pop(arr))
+        console.log(arr)
+
+        arr.shift(arr)  /*删除第一个*/
+        console.log(arr)
+
+        arr.splice(1, 2)    /*.splice(起始位置， 删除几个元素)*/
+        console.log(arr)
+    </script>
+</body>
+</html>

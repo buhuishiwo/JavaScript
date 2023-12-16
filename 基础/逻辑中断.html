@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(false && 1+1)       //逻辑与 有假直接中断
+        console.log(11 || true);        //逻辑或 有真就真
+
+        function fu(x,y){
+            x=x||0
+            y=y||0
+            console.log(x,y)
+        }
+        fu()
+    </script>
+</body>
+</html>

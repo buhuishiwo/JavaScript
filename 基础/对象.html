@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let person = {
+            name: '小红',
+            age: 20,
+            stature: 167,
+            gender: '女',
+            speak: function(){
+                document.write('你好')
+            }
+        };
+        person.speak()
+        person.sanwei='80C'
+        console.log(person);
+        console.log(person['name'])
+
+        //遍历对象
+        for(let k in person)    //k是带引号的属性名  ‘uname’‘age’
+        {
+            console.log(person[k]);
+        }
+    </script>
+</body>
+</html>

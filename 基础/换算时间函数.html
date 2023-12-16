@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let second = +prompt('请输入时间（秒数）')
+        function getTime(t){
+            h=parseInt(t/60/60%24)
+            m=parseInt(t/60%60)
+            s=parseInt(t%60)
+            h>10?'0'+h:h
+            m>10?'0'+m:m
+            s>10?'0'+s:s
+            document.write(`转换后时间是${h}:${m}:${s}`)
+        }
+        getTime(second)
+    </script>
+</body>
+</html>
